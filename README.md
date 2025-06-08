@@ -1,26 +1,26 @@
-# 📊 Bitcoin Volatility Forecasting using LSTM-GARCH
+## 📁 Files Overview
 
-This project investigates a hybrid deep learning and econometric model (LSTM + GARCH) for predicting the return volatility of Bitcoin. It includes the implementation code and the final research paper.
+### 🔹 Dataset
 
----
+- `finally_para_py_GARCH1_2_BTC_CBOE_VIX_KOSPI200_USDKRW.csv`  
+  → The main dataset used for model training and volatility prediction.  
+  It includes BTC price, volatility indices (VIX), KOSPI200, and exchange rate data.
 
-## 📄 Research Paper
+### 🔹 Notebooks (Model Development)
 
-[![PDF](https://img.shields.io/badge/View%20Final%20Paper-PDF-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./%EC%B5%9C%EC%A2%85%EB%85%BC%EB%AC%B8_%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8%20%EC%88%98%EC%9D%B5%EB%A5%A0%20%EB%B3%80%EB%8F%99%EC%84%B1%20%EC%98%88%EC%B8%A1%EC%9D%84%20%EC%9C%84%ED%95%9C%20LSTM%20%EA%B8%B0%EB%B0%98%20%ED%86%B5%ED%95%A9%20%EB%AA%A8%EB%8D%B8%20%EC%97%B0%EA%B5%AC.pdf
-)
+- `BTC_PROJ_Team2_NEW_1.ipynb`  
+- `BTC_PROJ_Team2_NEW_2.ipynb`  
+- `BTC_PROJ_Team2_NEW_3.ipynb`  
+  → These notebooks contain the same modeling logic as the final version,  
+  but were used for parameter experimentation (e.g., LSTM layers, learning rates, dropout).  
+  They were used to test and compare various model configurations.
 
----
+- `BTC_PROJ_Team2_final (1).ipynb` ✅  
+  → The final and best-performing version of the LSTM-GARCH model.  
+  This notebook includes the complete data pipeline, model training, and forecasting.
 
-## 📁 Files Included
+### 🔹 Paper
 
-- 📂 `BTC_PROJ_Team2_*.ipynb` – LSTM training & experiments  
-- 📂 `finally_para_py_GARCH*.ipynb` – GARCH parameter tuning  
-- 📄 `final_paper.pdf` – Complete research paper (uploaded above)
-
----
-
-## 🚀 How to Run
-
-```bash
-pip install -r requirements.txt
-jupyter notebook BTC_PROJ_Team2_final.ipynb
+- `최종논문_비트코인 수익률 변동성 예측을 위한 LSTM 기반 통합 모델 연구.pdf`  
+  → Final research paper summarizing methodology, empirical evaluation, and key results.  
+  [📘 View PDF](./최종논문_비트코인%20수익률%20변동성%20예측을%20위한%20LSTM%20기반%20통합%20모델%20연구.pdf)
